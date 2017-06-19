@@ -11,9 +11,8 @@
             <!--<transaction-type>Container</transaction-type>-->
             <ejb-local-ref>
                 <ejb-ref-name>ru.aparfenov.manager.ManagerBean/childBeanUsingDeploymentDesrciptor</ejb-ref-name>
-                <!--<ejb-ref-type>Session</ejb-ref-type>-->
                 <local>ru.aparfenov.model.GrandChildB</local>
-                <ejb-link>ru.aparfenov.children.GrandChildBBean</ejb-link>
+                <ejb-link>GrandChildBBean</ejb-link>
             </ejb-local-ref>
             <!--<ejb-ref>
                 <ejb-ref-name>childBInjectedRef</ejb-ref-name>

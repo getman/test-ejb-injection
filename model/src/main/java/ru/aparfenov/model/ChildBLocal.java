@@ -1,5 +1,7 @@
 package ru.aparfenov.model;
 
+import ru.aparfenov.model.ParentLocal;
+
 import javax.ejb.Local;
 
 /**

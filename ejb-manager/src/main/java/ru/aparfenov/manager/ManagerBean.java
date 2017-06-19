@@ -18,6 +18,7 @@ public class ManagerBean implements ManagerLocal {
 
     @EJB
     ChildBLocal childBeanUsingDeploymentDesrciptor;
+//    GrandChildB childBeanUsingDeploymentDesrciptor;
 
 //    @EJB
 //    ChildALocal childAInjectedRef;
