@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+    <description>IBM WAS test application </description>
+    <display-name>Test Manager</display-name>
+    <enterprise-beans>
+        <session>
+            <ejb-name>ManagerBean</ejb-name>
+            <remote>ru.aparfenov.manager.ManagerLocal</remote>
+            <ejb-class>ru.aparfenov.manager.ManagerBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+            <ejb-local-ref>
+                <ejb-ref-name>ChildAInjectedRef</ejb-ref-name>
+                <ejb-ref-type>Session</ejb-ref-type>
+                <!--<remote>ru.aparfenov.model.ChildALocal/remote>-->
+                <local>ru.aparfenov.model.ChildALocal</local>
+            </ejb-local-ref>
+            <ejb-ref>
+                <ejb-ref-name>childBInjectedRef</ejb-ref-name>
+                <ejb-ref-type>Session</ejb-ref-type>
+                <remote>ru.aparfenov.model.ChildBLocal</remote>
+                <!--<local>ru.aparfenov.model.ChildALocal</local>-->
+            </ejb-ref>
+        </session>
+    </enterprise-beans>
+</ejb-jar>
